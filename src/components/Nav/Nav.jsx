@@ -24,7 +24,7 @@ export default function Nav({ active }) {
     <nav className="fixed top-3 sm:top-5 inset-x-0 z-50 flex flex-col items-center px-3 sm:px-6 pointer-events-none">
       {/* Floating Pill Bar */}
       <div
-        className={`pointer-events-auto w-400 max-w-7xl rounded-full transition-all duration-300 flex items-center justify-between px-3 sm:px-5 py-2 sm:py-2.5 ${
+        className={`pointer-events-auto w-full max-w-7xl rounded-full transition-all duration-300 flex items-center justify-between px-3 sm:px-5 py-2 sm:py-2.5 ${
           scrolled
             ? 'bg-[#262729]/85 backdrop-blur-2xl border border-[#FFE7C2]/30 shadow-2xl shadow-black/70 ring-1 ring-white/10'
             : 'bg-[#262729]/75 backdrop-blur-xl border border-[#FFE7C2]/20 shadow-xl shadow-black/50'
