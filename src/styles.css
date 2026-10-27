@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+    background-color: #262729;
+  }
+  body {
+    @apply font-sans text-white bg-[#262729] antialiased selection:bg-[#FFE7C2] selection:text-[#262729];
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-tight;
+  }
+}
+
+/* Custom luxury scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #262729;
+}
+::-webkit-scrollbar-thumb {
+  background: #3f4247;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FFE7C2;
+}
